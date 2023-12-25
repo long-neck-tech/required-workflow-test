@@ -1,0 +1,14 @@
+name: Required Workflow Test
+
+on:
+  workflow_dispatch:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: hello
+      id: dirs
+      run: |
+        echo "Hello World!"
